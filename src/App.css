@@ -1,3 +1,10 @@
+body{
+  background-color: #282c34;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
 }
@@ -36,3 +43,255 @@
     transform: rotate(360deg);
   }
 }
+
+input{
+  background-color: white;
+  padding: 15px;
+  /* border-radius: 10px; */
+  color:  rgb(25, 83, 117);
+  font-size: 17px;
+  width: 90%;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+  
+}
+input::placeholder{
+  font-size: 17px;
+  color:  rgb(25, 83, 117);
+
+}
+h1{
+  padding:  20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  font-size: 29px;
+}
+.toDO{
+  border-radius: 20px;
+  width: 600px;
+  min-height: 100vh;
+  margin: 40px;
+  background-color: rgb(25, 83, 117);
+}
+
+.btn{
+  padding: 10px;
+  width: 200px;
+  border-radius: 17px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: 0.4s all;
+  margin: 0px 50px 0px 50px;
+  cursor: pointer;
+  
+  
+}
+.btn:hover{
+  background-color: white;
+  color: rgb(25, 83, 117);
+
+}
+        
+.listi{
+  position: relative;
+ 
+}
+ul{
+  width: 95%;
+  margin-right: 500px;
+
+}
+li{
+  list-style:decimal-leading-zero;
+  /* background-color: blue; */
+  border: 1px solid white;
+  padding: 34px 0px 10px 10px ; 
+  margin: 30px  19px 20px -10px ;
+  text-align: left;
+  position: relative;
+  font-size: 15px;
+  border-radius: 10px;
+ 
+
+ 
+  
+  
+
+}
+.btttn{
+  padding: 7px;
+  width: 10%;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: 0.4s all;
+  position: absolute;
+  top: 5px;
+  right: 18px;
+  font-size: 10px;
+  cursor: pointer;
+
+  
+ 
+
+}
+.bttn{
+  padding: 7px;
+  width: 10%;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+
+  transition: 0.4s all; 
+  position: absolute;
+  top: 5px;
+
+  right: 80px;
+ 
+
+}
+.bttn:hover{
+  background-color: white;
+  /* color: rgb(25, 83, 117); */
+  color: red;
+  font-weight: 600;
+
+}
+
+.btttn:hover{
+  background-color: white;
+  /* color: rgb(25, 83, 117); */
+  font-weight: 600;
+  color: green;
+
+}
+
+@media screen and (max-width: 650px){
+
+.toDO{
+  /* background-color: red; */
+  width: 500px;
+  margin: 20px;
+}
+.btn{
+  padding: 14px;
+  width: 150px;
+  
+}
+ul{
+  width: 92%;
+
+}
+li{
+  /* padding: 10px; */
+  margin: 15px  12px 0px -12px ;
+}
+.btttn{
+  
+   position: absolute;
+  top: 5px;
+  right: 8px;
+  
+
+}
+.bttn{
+ 
+  position: absolute;
+  top: 5px;
+  right: 70px;
+  width: 11%;
+
+}
+
+}
+
+@media screen and (max-width: 520px){
+
+  .toDO{
+    width:90%;
+    margin: 15px;
+  }
+  .btn{
+    padding: 10px;
+    width: 100px;
+    font-size: 12px;
+    
+  }
+  li{
+    list-style: none;
+    margin: 10px  19px 20px -30px ;
+  }
+  .bttn , .btttn{
+   
+    width: 14%;
+  }
+  h1{
+    font-size: 23px;
+  }
+
+}
+
+
+  
+
+  @media screen and (max-width: 440px){
+
+    .toDO{
+       width: 90%;
+     
+    }
+    .btn{
+      padding: 14px;
+   width: 90%;
+   margin: 10px;
+   border-radius: 1px; 
+    }
+    ul{
+      width: 90%;
+    
+    }
+  
+    .btttn,.bttn{
+      width: 15%;
+      padding: 5px;
+       font-size: 9px;
+    }
+    
+    }
+    @media screen and (max-width: 325px){
+      
+      .toDO{
+        width:96%;
+       
+      
+     }
+     input{
+      width: 87%;
+      
+     }
+     ul{
+       width: 90%;
+     
+     }
+    
+   
+     .btttn,.bttn{
+       width: 15%;
+       padding: 4px;
+        font-size: 7px;
+     }
+     h1{
+      font-size: 15px;
+     }
+    }
+
+  
